@@ -52,12 +52,19 @@ window.addEventListener('scroll', function(e) {
 
   console.log(st - lastScrollTop1);
     
+//   if (st > lastScrollTop1){
+//     if(Math.abs(st - lastScrollTop1) >= dataScrollDown && scrollEl.classList.contains('scroll-show-nav'))
+//         scrollEl.classList.remove('scroll-show-nav');
+//   }else {
+//   if(Math.abs(st - lastScrollTop1) >= dataScrollUp && !scrollEl.classList.contains('scroll-show-nav'))
+//     scrollEl.classList.add('scroll-show-nav');
+// }
   if (st > lastScrollTop1){
-    if(Math.abs(st - lastScrollTop1) >= dataScrollDown && scrollEl.classList.contains('scroll-show-nav'))
-        scrollEl.classList.remove('scroll-show-nav');
+    if(Math.abs(st - lastScrollTop1) >= dataScrollDown)
+        scrollEl.classList.add(dataScrollEffect);
   }else {
-  if(Math.abs(st - lastScrollTop1) >= dataScrollUp && !scrollEl.classList.contains('scroll-show-nav'))
-    scrollEl.classList.add('scroll-show-nav');
+  if(Math.abs(st - lastScrollTop1) >= dataScrollUp)
+    scrollEl.classList.remove(dataScrollEffect);
  }
    
   lastScrollTop1 = st;
