@@ -6,12 +6,6 @@ var lastScrollTop1 = 0;
 var delta = 3;
 var navbar = document.querySelector('.nav');
 
-// var navbarHeight;
-// if (navbar) {
-//   navbarHeight = navbar.clientHeight;  
-// }
-
-
 
 window.addEventListener('scroll', function(e) {
   
@@ -88,42 +82,31 @@ window.addEventListener('load', function() {
     }//end for
 });
 
-// var didScroll;
-// var lastScrollTop = 0;
-// var delta = 5;
-// var navbarHeight = $('.nav').outerHeight();
-
-// $(window).scroll(function(event){
-//     didScroll = true;
-// });
-
-// setInterval(function() {
-//     if (didScroll) {
-//         hasScrolled();
-//         didScroll = false;
-//     }
-// }, 250);
-
-// function hasScrolled() {
-//     var st = $(this).scrollTop();
-
-//     // Make sure they scroll more than delta
-//     if(Math.abs(lastScrollTop - st) <= delta)
-//         return;
-
-//     // If they scrolled down and are past the navbar, add class .nav-up.
-//     // This is necessary so you never see what is "behind" the navbar.
-//     if (st > lastScrollTop && st > navbarHeight){
-//         // Scroll Down
-//         $('.nav').removeClass('show-nav').addClass('hide-nav');
-//         // $('.nav-toggle').removeClass('open');
-//         // $('.menu-left').removeClass('collapse');
-//     } else {
-//         // Scroll Up
-//         if(st + $(window).height() < $(document).height()) {
-//             $('.nav').removeClass('hide-nav').addClass('show-nav');
-//         }
-//     }
-
-//     lastScrollTop = st;
-// }
+// Intersection for video
+  if(!!window.IntersectionObserver){
+    let videos = document.getElementsByTagName('video');
+    
+    for (var i=0; i < videos.length; i++) {
+    
+      interSectionObserv(videos[i]);
+    }
+  }
+  
+  function interSectionObserv(video)
+  {
+      let isPaused = true; /* flag for auto-pausing of the video */
+      let observer = new IntersectionObserver((entries, observer) => { 
+          entries.forEach(entry => {
+              if(entry.intersectionRatio!=1  && !video.paused){
+                  video.pause(); isPaused = true;
+              }
+              else if(isPaused) 
+              {
+                video.play(); isPaused=false
+              }
+  
+          });
+      }, {threshold: 1});
+      observer.observe(video);
+  }
+  
