@@ -6,7 +6,6 @@ var lastScrollTop1 = 0;
 var delta = 3;
 var navbar = document.querySelector('.nav');
 
-
 window.addEventListener('scroll', function(e) {
   
 // 	var body = document.querySelector('body');
