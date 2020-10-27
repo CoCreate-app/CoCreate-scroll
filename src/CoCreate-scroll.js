@@ -1,111 +1,186 @@
-// SHOW/HIDE NAV on scroll
-var didScroll;
-var lastScrollTop = 0;
-var lastScrollTop1 = 0;
+const CoCreateScroll = {
+	delta: 3,
+	observer: null,
+	init: function() {
+		this.initElement(document)
+	},
+	
+	initElement: function(container) {
+		let mainContainer = container || document;
+		const self = this;
+		if (!mainContainer.querySelectorAll) {
+			return;
+		}
+		
+		let elements = mainContainer.querySelectorAll(`[data-scroll]`);
+		if (elements.length === 0 && mainContainer != document && mainContainer.hasAttributes(`[data-scroll]`)) {
+			elements = [mainContainer];
+		}
+		
+		elements.forEach((element) => self.__initElementEvent(element));
+	},
+	
+	__initElementEvent: function(element) {
+		const self = this;
+		const upSize = this.__getSize(element.dataset['scroll_up']);
+		const downSize = this.__getSize(element.dataset['scroll_down']);
+		const attrName = element.dataset['scroll_attribute'] || 'class';
+		const targetSelector = element.dataset['scroll_element'];
+		const intersectValue = element.dataset['scroll_intersect']
+		
+		let values = element.getAttribute('data-scroll') || "";
+		values = values.split(",").map(x => x.trim());
+		
+		let scrollInfo = {
+			attrName: attrName,
+			values: values,
+			upSize: upSize,
+			downSize: downSize,
+			scrollTop: element.dataset['scroll_top'],
+			scrollBottom: element.dataset['scroll_bottom'],
+			scrolling: element.dataset['scrolling']
+		}
 
-var delta = 3;
-var navbar = document.querySelector('.nav');
+		let elements = [element]
+		if (targetSelector) {
+			elements = document.querySelectorAll(targetSelector);
+		}
+		
+		elements.forEach(el => {
+			el.scrollStatus = {currentPos: 0}
+		})
+		
+		let timer = null;
+		window.addEventListener('scroll', function(event) {
+			if (Math.abs(window.scrollY - element.scrollStatus.currentPos) <= self.delta) {
+				return;
+			}
+			
+			if (timer != null) {
+				clearTimeout(timer)
+			}
 
-window.addEventListener('scroll', function(e) {
-  
-// 	var body = document.querySelector('body');
-  var st = window.scrollY;
-  // console.log(st, window.scrollY);
-  var scrollEl = document.querySelector('.nav');
-  var toggleEl = document.querySelector('.nav-toggle');
+			elements.forEach((el) => {
+				self.__runScrollEvent(el, scrollInfo);
+				self.__setScrolling(el, scrollInfo, false);
+			})
+			
+			timer = setTimeout(function() {
+				elements.forEach((el) => {
+					self.__setScrolling(el, scrollInfo, true);
+				})
+			}, 500)
+		});
+		
+		if (intersectValue && window.IntersectionObserver) {
+			elements.forEach((el) => self.__setIntersection(el, attrName, intersectValue));
+		}
+	},
+	
+	__setIntersection: function(element, attrName, value) {
+		const self = this;
+		let observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if(!entry.isIntersecting) {
+					self.__removeAttrbuteValue(entry.target, attrName, value);
+				} else {
+					self.__addAttributeValue(entry.target, attrName, value);
+				}
+			})
+		}, {threshold: 1});
+		observer.observe(element);
+	},
+	
+	__setScrolling: function(element, info, stopped = false) {
+		const {scrolling, attrName} = info;
+		if (stopped) {
+			this.__removeAttrbuteValue(element, attrName, scrolling)
+		} else {
+			this.__addAttributeValue(element, attrName, scrolling)
+		}
+	},
+	
+	__runScrollEvent: function(element, info) {
+		
+		const currentPos = element.scrollStatus.currentPos;
+		const scrollY = window.scrollY;
+		const {upSize, downSize, attrName, values, scrollTop, scrollBottom} = info;
 
-  if(scrollEl == null)
-  {
-    return false;
-  }
+		if (upSize < (currentPos - scrollY)) {
+			this.__addAttributeValue(element, attrName, values[0]);
+			this.__removeAttrbuteValue(element, attrName, values[1]);
+		} else if (downSize < (scrollY - currentPos)) {
+			this.__removeAttrbuteValue(element, attrName, values[0]);
+			this.__addAttributeValue(element, attrName, values[1]);
+		}
+		
+		//. scroll top case
+		if (scrollY <= this.delta) {
+			this.__removeAttrbuteValue(element, attrName, values[0]);
+			this.__removeAttrbuteValue(element, attrName, values[1]);
 
-  var dataScrollEffect = scrollEl.getAttribute('data-scroll_effect');
-  var dataScrollPosition = scrollEl.getAttribute('data-scroll_position');
-  var dataScrollUp = scrollEl.getAttribute('data-scroll_up');
-  var dataScrollDown = scrollEl.getAttribute('data-scroll_down');
-  
-  
-  if (Math.abs(st - lastScrollTop1) <= delta) {
-    return; 
-  }
+			this.__addAttributeValue(element, attrName, scrollTop);
+		} else {
+			this.__removeAttrbuteValue(element, attrName, scrollTop);
+		}
+		
+		//. scroll bottom case
+		if ((window.innerHeight + scrollY) >= document.body.scrollHeight - this.delta) {
+			// this.__removeAttrbuteValue(element, attrName, values[0]);
+			// this.__removeAttrbuteValue(element, attrName, values[1]);
+			
+			this.__addAttributeValue(element, attrName, scrollBottom);
+		} else {
+			this.__removeAttrbuteValue(element, attrName, scrollBottom);
+		}
+		
+		element.scrollStatus.currentPos = scrollY	
+	},
 
-  if(st >= dataScrollPosition){
-    if(scrollEl && !scrollEl.classList.contains(dataScrollEffect))
-      scrollEl.classList.add(dataScrollEffect);
-    
-    if(toggleEl && toggleEl.classList.contains('open'))
-      toggleEl.classList.remove('open');
-  }else{
-    if(scrollEl && scrollEl.classList.contains(dataScrollEffect))
-      scrollEl.classList.remove(dataScrollEffect);
-    
-    if(toggleEl && !toggleEl.classList.contains('open'))
-      toggleEl.classList.add('open');    
-  }
+	__addAttributeValue: function(element, attrName, value){
+		if (!value) return
+		let check = new RegExp("(\\s|^)" + value + "(\\s|$)");
+		let attrValue = element.getAttribute(attrName) || "";
+		
+		if(!check.test(attrValue)) {
+			attrValue += " " + value;
+			element.setAttribute(attrName, attrValue);
+		}		
+	},
+	
+	__removeAttrbuteValue: function(element, attrName, value) {
+		if (!value) return 
+		let check = new RegExp("(\\s|^)" + value + "(\\s|$)");
+		let attrValue = element.getAttribute(attrName) || "";
+		
+		if(check.test(attrValue)) {
+			attrValue = attrValue.replace(check, " ").trim();
+			element.setAttribute(attrName, attrValue);
+		}
+	},
+	
+	__getSize: function(attrValue, isWidth) {
+		let size = 0;
+		if (!attrValue) {
+			return 0;
+		}
+		
+		if (attrValue.includes('%')) {
+			size = attrValue.replace('%', '').trim();
+			size = Number(size) || 0;
+			
+			size = isWidth ? window.innerWidth / size : window.innerHeight / size;
+			
+		} else {
+			size = attrValue.replace('px', '').trim();
+			size = Number(size) || 0;
+		}
+		
+		return size;
+	}
+	
 
-  console.log(st - lastScrollTop1);
-    
-//   if (st > lastScrollTop1){
-//     if(Math.abs(st - lastScrollTop1) >= dataScrollDown && scrollEl.classList.contains('scroll-show-nav'))
-//         scrollEl.classList.remove('scroll-show-nav');
-//   }else {
-//   if(Math.abs(st - lastScrollTop1) >= dataScrollUp && !scrollEl.classList.contains('scroll-show-nav'))
-//     scrollEl.classList.add('scroll-show-nav');
-// }
-  if (st > lastScrollTop1){
-    if(Math.abs(st - lastScrollTop1) >= dataScrollDown)
-        scrollEl.classList.add(dataScrollEffect);
-  }else {
-  if(Math.abs(st - lastScrollTop1) >= dataScrollUp)
-    scrollEl.classList.remove(dataScrollEffect);
- }
-   
-  lastScrollTop1 = st;
-})
+	
+}
 
-//show scroll on scroll
-window.addEventListener('load', function() {
-  	var timer = undefined;
-    var els = document.querySelectorAll('.cocreate-scroll');
-    for (var i=0; i < els.length; i++) {
-		    els[i].addEventListener('scroll', function(e) {
-		    	var el = e.target;
-			    (function(el){
-			      el.classList.add('scroll');
-			      clearTimeout(timer);
-			      timer = setTimeout(function() {
-			        el.classList.remove('scroll');
-			      }, 250);
-			    })(el);
-		    });//end eventListener
-    }//end for
-});
-
-// Intersection for video
-  if(!!window.IntersectionObserver){
-    let videos = document.getElementsByTagName('video');
-    
-    for (var i=0; i < videos.length; i++) {
-    
-      interSectionObserv(videos[i]);
-    }
-  }
-  
-  function interSectionObserv(video)
-  {
-      let isPaused = true; /* flag for auto-pausing of the video */
-      let observer = new IntersectionObserver((entries, observer) => { 
-          entries.forEach(entry => {
-              if(entry.intersectionRatio!=1  && !video.paused){
-                  video.pause(); isPaused = true;
-              }
-              else if(isPaused) 
-              {
-                video.play(); isPaused=false
-              }
-  
-          });
-      }, {threshold: 1});
-      observer.observe(video);
-  }
-  
+CoCreateScroll.init();
