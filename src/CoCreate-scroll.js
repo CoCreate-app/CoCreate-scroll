@@ -2,6 +2,7 @@ const CoCreateScroll = {
 	delta: 3,
 	observer: null,
 	init: function() {
+		this.__initIntersectionObserver();
 		this.initElement(document)
 	},
 	
@@ -25,7 +26,7 @@ const CoCreateScroll = {
 		const upSize = this.__getSize(element.dataset['scroll_up']);
 		const downSize = this.__getSize(element.dataset['scroll_down']);
 		const attrName = element.dataset['scroll_attribute'] || 'class';
-		const targetSelector = element.dataset['scroll_element'];
+		const targetSelector = element.dataset['scroll_target'];
 		const intersectValue = element.dataset['scroll_intersect']
 		
 		let values = element.getAttribute('data-scroll') || "";
@@ -52,6 +53,7 @@ const CoCreateScroll = {
 		
 		let timer = null;
 		window.addEventListener('scroll', function(event) {
+			if (!element.scrollStatus) return;
 			if (Math.abs(window.scrollY - element.scrollStatus.currentPos) <= self.delta) {
 				return;
 			}
@@ -72,23 +74,31 @@ const CoCreateScroll = {
 			}, 500)
 		});
 		
-		if (intersectValue && window.IntersectionObserver) {
-			elements.forEach((el) => self.__setIntersection(el, attrName, intersectValue));
+		if (intersectValue && window.IntersectionObserver && this.observer) {
+			this.observer.observe(element)
 		}
 	},
 	
-	__setIntersection: function(element, attrName, value) {
+	__initIntersectionObserver: function() {
 		const self = this;
-		let observer = new IntersectionObserver(entries => {
+		this.observer = new IntersectionObserver(entries => {
 			entries.forEach(entry => {
-				if(!entry.isIntersecting) {
-					self.__removeAttrbuteValue(entry.target, attrName, value);
+				let element = entry.target;
+				const attrName = element.dataset['scroll_attribute'] || 'class';
+				const targetSelector = element.dataset['scroll_target'];
+				const intersectValue = element.dataset['scroll_intersect']
+		
+				let targetElements = [element]
+				if (targetSelector) {
+					targetElements = document.querySelectorAll(targetSelector);
+				}
+				if(entry.isIntersecting > 0) {
+					targetElements.forEach((el) => self.__addAttributeValue(el, attrName, intersectValue))
 				} else {
-					self.__addAttributeValue(entry.target, attrName, value);
+					targetElements.forEach((el) => self.__removeAttrbuteValue(el, attrName, intersectValue))
 				}
 			})
-		}, {threshold: 1});
-		observer.observe(element);
+		});
 	},
 	
 	__setScrolling: function(element, info, stopped = false) {

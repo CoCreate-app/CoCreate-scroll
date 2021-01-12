@@ -21,7 +21,7 @@
 /*}*/
 
   .cocreate-scroll {
-    overflow: overlay!important; 
+    overflow: auto; 
     position: relative;
     overflow-anchor: none;
     -ms-overflow-style: none;
