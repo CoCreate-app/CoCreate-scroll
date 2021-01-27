@@ -194,3 +194,5 @@ const CoCreateScroll = {
 }
 
 CoCreateScroll.init();
+
+export default CoCreateScroll;
