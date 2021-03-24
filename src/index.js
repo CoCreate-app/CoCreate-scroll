@@ -1,3 +1,5 @@
+import observer from '../../CoCreate-observer/src'
+
 const CoCreateScroll = {
 	delta: 3,
 	observer: null,
@@ -194,5 +196,14 @@ const CoCreateScroll = {
 }
 
 CoCreateScroll.init();
+
+observer.init({ 
+	name: 'CoCreateScrollCreate', 
+	observe: ['subtree', 'childList'],
+	include: '[data-scroll]', 
+	callback: function(mutation) {
+		CoCreateScroll.initElement(mutation.target)
+	}
+});
 
 export default CoCreateScroll;
