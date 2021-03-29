@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.0...v1.0.1) (2021-03-29)
+
+
+### Bug Fixes
+
+* Package Paths ([b03375c](https://github.com/CoCreate-app/CoCreate-scroll/commit/b03375cc3d57beaf121b32516cffacc324cebcbd))
+
 # 1.0.0 (2021-03-26)
 
 
