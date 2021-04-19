@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.1...v1.0.2) (2021-04-19)
+
+
+### Bug Fixes
+
+* ci and build process ([8e6db3f](https://github.com/CoCreate-app/CoCreate-scroll/commit/8e6db3ff01c971af6ab097c6996df3b529aab169))
+* npm publish and cdn deployment ([f67d0eb](https://github.com/CoCreate-app/CoCreate-scroll/commit/f67d0eb318eb473f2bbcb24376b37a7bfb7a32a5))
+
 ## [1.0.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.0...v1.0.1) (2021-03-29)
 
 
