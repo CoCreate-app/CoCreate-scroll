@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.5...v1.0.6) (2021-04-27)
+
+
+### Bug Fixes
+
+* add host in docs ([1809e37](https://github.com/CoCreate-app/CoCreate-scroll/commit/1809e37932e5e6eac15b6593f1914c71d4005667))
+
 ## [1.0.5](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.4...v1.0.5) (2021-04-27)
 
 
