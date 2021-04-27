@@ -1,113 +1,55 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Instantly create a start-up or manage and grow an existing business, all-in-one Realtime callobrative solution complete with many automation's and a customizable website.">
-    <meta name="keywords" content="CoCreate, app landing, responsive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CoCreate - Build your business in minutes.</title>
+    <title>Scroll | CoCreateJS</title>
     
-    <!-- CoCreate UI -->
-    
-    <link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="https://server.cocreate.app/CoCreate-components/CoCreate-overlay-scroll/CoCreate-overlay-scroll.css" type="text/css" />-->
-   
-       
-   
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- CoCreate Favicon -->
+    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
+    <!-- Custom CSS -->
+    <style>
+      .overlay-scroll {
+        overflow: overlay!important; 
+        position: relative;
+        overflow-anchor: none;
+        -ms-overflow-style: none;
+        touch-scroll: auto;
+        -ms-touch-scroll: auto;
+      }
+      
+      ::-webkit-scrollbar {
+        width: 5px;
+        height:5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #3790ff!important;
+      }
+      ::-webkit-scrollbar-thumb{
+        background: rgba(0, 0, 0, 0.08)!important;
+      }
+      ::-webkit-scrollbar-track{
+        background: rgba(0, 0, 0, 0.06)!important;
+      }
+      
+      .hidden {
+          display: none;
+      }
+      
+      .scrolling {
+        background-color: gray;
+      }
+      
+      .scroll_bottom {
+        background-color: blue;
+      }
+      
+      .scroll_top {
+        background-color: red;
+      }
+
+    </style>
   </head>
-
-<style>
-  .overlay-scroll {
-    overflow: overlay!important; 
-    position: relative;
-    overflow-anchor: none;
-    -ms-overflow-style: none;
-    touch-action: auto;
-    -ms-touch-action: auto;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 5px;
-    height:5px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-      background: #3790ff!important;
-  }
-  ::-webkit-scrollbar-thumb{
-    background: rgba(0, 0, 0, 0.08)!important;
-  }
-  ::-webkit-scrollbar-track{
-    background: rgba(0, 0, 0, 0.06)!important;
-  }
-  
-  .hidden {
-      display: none;
-  }
-  
-  .scrolling {
-    background-color: gray;
-  }
-  
-  .scroll_bottom {
-    background-color: blue;
-  }
-  
-  .scroll_top {
-    background-color: red;
-  }
-
-</style>  
   <body>
-    <!-- Navbar  -->
-    <div class="display:flex flex-wrap:wrap justify-content:space-between flex-direction:row padding-top:10px padding-bottom:10px width:100% nav"
-      data-main_content_id="content"
-      data-scroll="hidden, sticky-nav"
-      data-scrolling="scrolling"
-      data-scroll_top="scroll_top"
-      data-scroll_bottom="scroll_bottom"
-      data-scroll_up="10"
-      data-scroll_down="5">
 
-      <!--<a href="#" class="logo">Navbar</a>-->
-      <div class="margin:0px_15px display:flex flex-wrap:wrap justify-content:space-between flex-direction:row align-items:center width:100%">
-        <div class="logo-box">
-          <a href="/">
-            <img src="https://server.cocreate.app/CoCreate-website/images/logo.png"/>
-          </a>
-        </div>
-         
-          <a class="nav-toggle menu_icon--hamburger show-on-phone-only" data-toggle_sidenav="menuL">
-              <span></span>
-              <span></span>
-              <span></span>
-          </a>
-  
-        <div class="display:flex align-items:center show-on-tablet-and-up">
-          <div class="">
-            <a href="">Home</a>
-          </div>
-          <div class="margin-left:25px">
-            <a href="">Features</a>
-          </div>
-          <div class="margin-left:25px">
-            <a href="https://server.cocreate.app/documentation/">Documentation</a>
-          </div>
-          <div class="margin-left:25px">
-            <a href="">Pricing</a>
-          </div>
-          <div class="margin-left:25px">
-            <a href="#spreadtheword">Spread the word</a>
-          </div>
-          <div class="margin-left:25px">
-            <a class="border:1px_black_solid border-radius:50px padding:10px" href="">Get Started <i class="fas fa-chevron-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
     <section class="padding-top:80px padding-bottom:40px   ">
       <div class=" max-width:90% margin:0px_auto">
         <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
@@ -202,31 +144,6 @@
       </div>
     </footer>
     
-    <div id="menuL" class="cocreate-sidenav background:lightgrey" 
-      data-main_content="canvas,navbar" 
-      sidenav-default_desktop="offcanvas" 
-      sidenav-default_tablet="offcanvas" 
-      sidenav-default_phone="offcanvas" 
-      sidenav-expanded_width="300px">
-      <ul class="cocreate-scroll">
-        <div class="margin-left:25px">
-          <a href="">Home</a>
-        </div>
-        <div class=" margin-left:25px">
-          <a href="">Features</a>
-        </div>
-        <div class=" margin-left:25px">
-          <a href="">Demo</a>
-        </div>
-        <div class=" margin-left:25px">
-          <a href="">Pricing</a>
-        </div>
-        <div class=" margin-left:25px">
-          <a href="">Spread the word</a>
-        </div>
-      	  <div class="resizeHandler"></div>
-  	  </ul>
-    </div>
 
     <script>
       var config = {
@@ -235,12 +152,8 @@
       }
     </script>
 
-
-  <!--CoCreateJS-->
-  <script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-  <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-scroll/src/CoCreate-scroll.js"></script>-->
-  <!--<script src="https://server.cocreate.app/CoCreate-components/CoCreate-overlay-scroll/CoCreate-overlay-scroll.js"></script>-->
-
+    <!-- CoCreate JS CDN -->
+    <script src="https://cdn.cocreate.app/scroll/latest/CoCreate-scroll.min.js" ></script>
   </body>
 </html>
 
