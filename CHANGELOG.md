@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.4...v1.0.5) (2021-04-27)
+
+
+### Bug Fixes
+
+* Update to readme, demo, added cdn scripts ([f6df4e6](https://github.com/CoCreate-app/CoCreate-scroll/commit/f6df4e6eb175cad5111137868aa1b7a4f479d4d2))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.3...v1.0.4) (2021-04-23)
 
 
