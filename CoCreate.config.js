@@ -10,7 +10,7 @@ module.exports = {
             "path": "./docs/index.html",
             "collection": "files",
             "document_id": "602095e13c260207bf49cac4",
-            "key": "html",
+            "key": "src",
             "data":{
                 "name": "scroll Doc",
                 "domains": ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
