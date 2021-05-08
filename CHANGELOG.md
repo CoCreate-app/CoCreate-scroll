@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.6...v1.0.7) (2021-05-08)
+
+
+### Bug Fixes
+
+* add css auto parse and save to docs. ([7fdfe82](https://github.com/CoCreate-app/CoCreate-scroll/commit/7fdfe82fc44a848bb8eb8d49cf0b61e26680ed4c))
+
 ## [1.0.6](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.5...v1.0.6) (2021-04-27)
 
 
