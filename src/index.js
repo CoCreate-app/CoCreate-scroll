@@ -199,9 +199,10 @@ CoCreateScroll.init();
 
 observer.init({ 
 	name: 'CoCreateScrollCreate', 
-	observe: ['subtree', 'childList'],
-	include: '[data-scroll]', 
+	observe: ['addedNodes'],
+	attributeFilter: [ 'data-scroll'],
 	callback: function(mutation) {
+		if (!mutation.target.tagName) return;
 		CoCreateScroll.initElement(mutation.target)
 	}
 });
