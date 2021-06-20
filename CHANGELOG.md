@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.8...v1.0.9) (2021-06-20)
+
+
+### Bug Fixes
+
+* new mutaionObserver init function ([3b3889c](https://github.com/CoCreate-app/CoCreate-scroll/commit/3b3889cbe1d49510eb9697143722df86f604fc48))
+
 ## [1.0.8](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.7...v1.0.8) (2021-06-16)
 
 
