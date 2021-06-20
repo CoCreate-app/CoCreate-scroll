@@ -202,7 +202,7 @@ observer.init({
 	observe: ['addedNodes'],
 	attributeFilter: [ 'data-scroll'],
 	callback: function(mutation) {
-		if (!mutation.target.tagName) return;
+
 		CoCreateScroll.initElement(mutation.target)
 	}
 });
