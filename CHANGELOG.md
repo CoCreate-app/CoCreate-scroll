@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.7...v1.0.8) (2021-06-16)
+
+
+### Bug Fixes
+
+* added header for seo ([751df7c](https://github.com/CoCreate-app/CoCreate-scroll/commit/751df7c5dbda7831666c1fbd811492ad24bf5496))
+
 ## [1.0.7](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.6...v1.0.7) (2021-05-08)
 
 
