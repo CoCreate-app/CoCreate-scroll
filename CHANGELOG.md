@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.11...v1.0.12) (2021-06-25)
+
+
+### Bug Fixes
+
+* latest version numbers applied to all cocreate packages ([5a0eb5f](https://github.com/CoCreate-app/CoCreate-scroll/commit/5a0eb5fc9943c71ec35c696b76d31b44ffefea08))
+
 ## [1.0.11](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.10...v1.0.11) (2021-06-24)
 
 
