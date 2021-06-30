@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.12...v1.0.13) (2021-06-30)
+
+
+### Bug Fixes
+
+* automated and manual workflows ([93992d3](https://github.com/CoCreate-app/CoCreate-scroll/commit/93992d3027ea3dbe1d21fdd18504c0f7c65875d7))
+
 ## [1.0.12](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.11...v1.0.12) (2021-06-25)
 
 
