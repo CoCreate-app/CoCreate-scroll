@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.15...v1.0.16) (2021-07-10)
+
+
+### Bug Fixes
+
+* gitignore all logs ([3ae74b6](https://github.com/CoCreate-app/CoCreate-scroll/commit/3ae74b6d4e7d1579055ee07cf2ecdabed3169914))
+
 ## [1.0.15](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.14...v1.0.15) (2021-07-07)
 
 
