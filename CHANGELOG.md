@@ -1,3 +1,18 @@
+## [1.0.18](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.17...v1.0.18) (2021-07-14)
+
+
+### Bug Fixes
+
+* upgrade all packages ([d6367b8](https://github.com/CoCreate-app/CoCreate-scroll/commit/d6367b83560dc9e4b7af7f661130f44fc2c09129))
+
+## [1.0.17](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.16...v1.0.17) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([457cee5](https://github.com/CoCreate-app/CoCreate-scroll/commit/457cee56c4c822f6f4150f8ad3ac4b4d597c5d33))
+* remove yarn.lock ([c96b199](https://github.com/CoCreate-app/CoCreate-scroll/commit/c96b19999abe8c08763e509fc9334986bac90e4f))
+
 ## [1.0.16](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.15...v1.0.16) (2021-07-10)
 
 
