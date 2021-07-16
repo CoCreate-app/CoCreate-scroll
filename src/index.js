@@ -11,7 +11,7 @@ const CoCreateScroll = {
 
 	initElements: function(elements) {
 		for (let el of elements)
-			this.__initElementEvent(el)
+			this.initElement(el)
 	},
 
 	initElement: function(element) {
