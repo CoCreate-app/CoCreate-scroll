@@ -200,7 +200,7 @@ CoCreateScroll.init();
 observer.init({ 
 	name: 'CoCreateScrollCreate', 
 	observe: ['addedNodes'],
-	attributeFilter: [ 'data-scroll'],
+	target: '[data-scroll]',
 	callback: function(mutation) {
 
 		CoCreateScroll.initElement(mutation.target)
