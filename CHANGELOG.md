@@ -1,3 +1,13 @@
+## [1.0.19](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.18...v1.0.19) (2021-07-17)
+
+
+### Bug Fixes
+
+* init and update demos scripts ([6589903](https://github.com/CoCreate-app/CoCreate-scroll/commit/65899034e4516d5e0131afca2fd2675381a0f6d1))
+* initElement function name ([0b21e96](https://github.com/CoCreate-app/CoCreate-scroll/commit/0b21e96cf8f039726b2087dea2fa4fc3fa912a48))
+* update init functions ([84e6c7c](https://github.com/CoCreate-app/CoCreate-scroll/commit/84e6c7ca38196eab11928373b2383e848a9804bf))
+* workflows ([f058a80](https://github.com/CoCreate-app/CoCreate-scroll/commit/f058a8006c04d3a86637ef3e612d249d517103d9))
+
 ## [1.0.18](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.17...v1.0.18) (2021-07-14)
 
 
