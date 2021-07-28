@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.19...v1.1.0) (2021-07-28)
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([31398e5](https://github.com/CoCreate-app/CoCreate-scroll/commit/31398e5073582af05aaf2d0c71e1f02c8d3ed6fc))
+
 ## [1.0.19](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.0.18...v1.0.19) (2021-07-17)
 
 
