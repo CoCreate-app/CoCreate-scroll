@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/scroll",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple scroll component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "scroll",
