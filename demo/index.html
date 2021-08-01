@@ -1,64 +1,123 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Scroll | CoCreateJS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Instantly create a start-up or manage and grow an existing business, all-in-one Realtime callobrative solution complete with many automation's and a customizable website.">
+    <meta name="keywords" content="CoCreate, app landing, responsive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoCreate - Build your business in minutes.</title>
     
-    <!-- CoCreate Favicon -->
-    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
-    <!-- Custom CSS -->
-    <style>
-      .overlay-scroll {
-        overflow: overlay!important; 
-        position: relative;
-        overflow-anchor: none;
-        -ms-overflow-style: none;
-        touch-scroll: auto;
-        -ms-touch-scroll: auto;
-      }
-      
-      ::-webkit-scrollbar {
-        width: 5px;
-        height:5px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-          background: #3790ff!important;
-      }
-      ::-webkit-scrollbar-thumb{
-        background: rgba(0, 0, 0, 0.08)!important;
-      }
-      ::-webkit-scrollbar-track{
-        background: rgba(0, 0, 0, 0.06)!important;
-      }
-      
-      .hidden {
-          display: none;
-      }
-      
-      .scrolling {
-        background-color: gray;
-      }
-      
-      .scroll_bottom {
-        background-color: blue;
-      }
-      
-      .scroll_top {
-        background-color: red;
-      }
-
-    </style>
+    <!-- CoCreate UI -->
+    <!--<link rel="stylesheet" href="https://cdn.cocreate.app/CoCreate.min.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
+    <!--<link rel="stylesheet" href="https://server.cocreate.app/CoCreate-components/CoCreate-overlay-scroll/CoCreate-overlay-scroll.css" type="text/css" />-->
+   
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
+   
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   </head>
-  <body>
 
+<style>
+  .overlay-scroll {
+    overflow: overlay!important; 
+    position: relative;
+    overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto;
+    -ms-touch-action: auto;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+    height:5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background: #3790ff!important;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.08)!important;
+  }
+  ::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.06)!important;
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  .scrolling {
+    background-color: gray;
+  }
+  
+  .scroll_bottom {
+    background-color: blue;
+  }
+  
+  .scroll_top, .testing {
+    background-color: red;
+  }
+
+</style>  
+  <body>
+    <!-- Navbar  -->
+    <div class="display:flex flex-wrap:wrap justify-content:space-between flex-direction:row padding-top:10px padding-bottom:10px width:100% nav"
+      data-main_content_id="content"
+      scroll="hidden, sticky-nav"
+      scrolling="scrolling"
+      scroll-top="scroll_top"
+      scroll-bottom="scroll_bottom"
+      scroll-up="10"
+      scroll-down="5">
+
+      <!--<a href="#" class="logo">Navbar</a>-->
+      <div class="margin:0px_15px display:flex flex-wrap:wrap justify-content:space-between flex-direction:row align-items:center width:100%">
+        <div class="logo-box">
+          <a href="/">
+            <img src="https://server.cocreate.app/CoCreate-website/images/logo.png"/>
+          </a>
+        </div>
+         
+          <a class="nav-toggle menu_icon--hamburger show-on-phone-only" data-toggle_sidenav="menuL">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+  
+        <div class="display:flex align-items:center show-on-tablet-and-up">
+          <div class="">
+            <a href="">Home</a>
+          </div>
+          <div class="margin-left:25px">
+            <a href="">Features</a>
+          </div>
+          <div class="margin-left:25px">
+            <a href="https://server.cocreate.app/documentation/">Documentation</a>
+          </div>
+          <div class="margin-left:25px">
+            <a href="">Pricing</a>
+          </div>
+          <div class="margin-left:25px">
+            <a href="#spreadtheword">Spread the word</a>
+          </div>
+          <div class="margin-left:25px">
+            <a class="border:1px_black_solid border-radius:50px padding:10px" href="">Get Started <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="padding-top:80px padding-bottom:40px   ">
       <div class=" max-width:90% margin:0px_auto">
         <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
-          <div class="flex-grow:1 width:300px">
+          <div class="flex-grow:1 min-width:300px width:50%">
             <video loop autoplay muted class="width:100%">
               <source src="https://server.cocreate.app/CoCreate-website/images/dashboard-video.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="flex-grow:1 width:300px padding:0px_15px font-size:16px ">
+          <div class="flex-grow:1 min-width:300px width:50% padding:0px_15px font-size:16px ">
             <h1 class="font-size:2rem">Build your buisness in <span class="color-blue">minutes</span></h1>
             <p class="margin-top:10px">Collaborate. Track. Sell. Manage with ease.</p>
             <a class="btn display:inline-block bg-blue color:white border-radius-50px margin-top:20px padding:10px_0px padding:0px_30px">Get Started</a>
@@ -96,12 +155,12 @@
     <section class="padding-top:80px padding-bottom:40px">
       <div class="max-width:90% margin:0px_auto">
         <div class="display:flex flex-wrap:wrap align-items:center">
-          <div class="flex-grow:1 width:300px">
+          <div class="flex-grow:1 min-width:300px width:50%">
             <video loop muted class="width:100%">
               <source type="video/mp4" src="https://server.cocreate.app/CoCreate-website/images/on-board-video.webm">
             </video>
           </div>
-          <div class="flex-grow:1 width:300px padding-left:15px padding-right:15px">
+          <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
             <h1 class="font-size:2rem">Easy onboarding, fast adoption</h1>
             <p class="margin-top:10px">Getting your team on board is as simple as sending an email. Getting them hooked is as simple as letting them use it.</p>
             <p></p>
@@ -113,14 +172,14 @@
     <section class="bg-light-gray padding-top:80px padding-bottom:40px">
       <div class="max-width:90% margin:0px_auto">
         <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
-          <div class="flex-grow:1 width:300px">
-            <video loop muted class="width:100%"  data-scroll="" data-scroll_intersect="testing">
+          <div class="flex-grow:1 min-width:300px width:50%">
+            <video loop muted class="width:100%"  scroll="" scroll-intersect="testing">
               <source type="video/mp4" src="https://server.cocreate.app/CoCreate-website/images/cards.webm"></source>
             </video>
           </div>
-          <div class="flex-grow:1 width:300px padding-left:15px padding-right:15px">
+          <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
             <h1 class="font-size:2rem">Create dashboards & stay in control</h1>
-            <p class="margin-top:10px" data-scroll="" data-scroll_intersect="testing">Build and customize your dashboards to gain important insights and a clear overview of your work.</p>
+            <p class="margin-top:10px" scroll="" scroll-intersect="testing">Build and customize your dashboards to gain important insights and a clear overview of your work.</p>
           </div>
         </div>
       </div>
@@ -131,11 +190,11 @@
     					
     					<div class="width:100% display:inline-block text-align:center padding-bottom:20px font-size:21px border-bottom:1px_solid_white">
     						<ul class="padding-0px list-style-type:none justify-content:center display:flex">
-    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-share_network='facebook' title="Share on Facebook"><i class="fab fa-facebook-f footer-icon"></i></a></li>
-    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-share_network='twitter'><i class="fab fa-twitter footer-icon"></i></a></li>
-    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-share_network='google'><i class="fab fa-google-plus-g footer-icon"></i></a></li>
-    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-share_network='linkedin' ><i class="fab fa-linkedin-in footer-icon"></i></a></li>
-    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-share_network='pintrest' ><i class="fab fa-pinterest-p footer-icon"></i></a></li>
+    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-network='facebook' title="Share on Facebook"><i class="fab fa-facebook-f footer-icon"></i></a></li>
+    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-network='twitter'><i class="fab fa-twitter footer-icon"></i></a></li>
+    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-network='google'><i class="fab fa-google-plus-g footer-icon"></i></a></li>
+    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-network='linkedin' ><i class="fab fa-linkedin-in footer-icon"></i></a></li>
+    							<li class="padding:0px_15px"><a href="#" class="share color:white" data-network='pintrest' ><i class="fab fa-pinterest-p footer-icon"></i></a></li>
     						</ul>
     					</div>				
     
@@ -144,6 +203,31 @@
       </div>
     </footer>
     
+    <div id="menuL" class="cocreate-sidenav background:lightgrey" 
+      data-main_content="canvas,navbar" 
+      sidenav-default_desktop="offcanvas" 
+      sidenav-default_tablet="offcanvas" 
+      sidenav-default_phone="offcanvas" 
+      sidenav-expanded_width="300px">
+      <ul class="cocreate-scroll">
+        <div class="margin-left:25px">
+          <a href="">Home</a>
+        </div>
+        <div class=" margin-left:25px">
+          <a href="">Features</a>
+        </div>
+        <div class=" margin-left:25px">
+          <a href="">Demo</a>
+        </div>
+        <div class=" margin-left:25px">
+          <a href="">Pricing</a>
+        </div>
+        <div class=" margin-left:25px">
+          <a href="">Spread the word</a>
+        </div>
+      	  <div class="resizeHandler"></div>
+  	  </ul>
+    </div>
 
 	    <script>
 	      var config = {
@@ -153,8 +237,9 @@
 	      }
 	    </script>
 	    
-        <!--<script src="../dist/CoCreate-scroll.js"></script>-->
-	    <script src="../../../CoCreateJS/dist/CoCreate.js"></script>
+        <!--<script src="../dist/CoCreate-selected.js"></script>-->
+	    <script src="../../../CoCreateJS/dist/CoCreate.js" ></script>
+
   </body>
 </html>
 

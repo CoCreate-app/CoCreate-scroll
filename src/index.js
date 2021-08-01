@@ -1,28 +1,28 @@
-import observer from '@cocreate/observer'
+import observer from '@cocreate/observer';
 
 const CoCreateScroll = {
 	delta: 3,
 	observer: null,
 	init: function() {
-		let elements = document.querySelectorAll(`[data-scroll]`);
+		let elements = document.querySelectorAll(`[scroll]`);
 		this.__initIntersectionObserver();
-		this.initElements(elements)
+		this.initElements(elements);
 	},
 
 	initElements: function(elements) {
 		for (let el of elements)
-			this.initElement(el)
+			this.initElement(el);
 	},
 
 	initElement: function(element) {
 		const self = this;
-		const upSize = this.__getSize(element.dataset['scroll_up']);
-		const downSize = this.__getSize(element.dataset['scroll_down']);
-		const attrName = element.dataset['scroll_attribute'] || 'class';
-		const targetSelector = element.dataset['scroll_target'];
-		const intersectValue = element.dataset['scroll_intersect']
+		const upSize = this.__getSize(element.getAttribute('scroll-up'));
+		const downSize = this.__getSize(element.getAttribute('scroll-down'));
+		const attrName = element.getAttribute('scroll-attribute') || 'class';
+		const targetSelector = element.getAttribute('scroll-target');
+		const intersectValue = element.getAttribute('scroll-intersect');
 
-		let values = element.getAttribute('data-scroll') || "";
+		let values = element.getAttribute('scroll') || "";
 		values = values.split(",").map(x => x.trim());
 
 		let scrollInfo = {
@@ -30,19 +30,19 @@ const CoCreateScroll = {
 			values: values,
 			upSize: upSize,
 			downSize: downSize,
-			scrollTop: element.dataset['scroll_top'],
-			scrollBottom: element.dataset['scroll_bottom'],
-			scrolling: element.dataset['scrolling']
-		}
+			scrollTop: element.getAttribute('scroll-top'),
+			scrollBottom: element.getAttribute('scroll-bottom'),
+			scrolling: element.getAttribute('scrolling')
+		};
 
-		let elements = [element]
+		let elements = [element];
 		if (targetSelector) {
 			elements = document.querySelectorAll(targetSelector);
 		}
 
 		elements.forEach(el => {
-			el.scrollStatus = { currentPos: 0 }
-		})
+			el.scrollStatus = { currentPos: 0 };
+		});
 
 		let timer = null;
 		window.addEventListener('scroll', function(event) {
@@ -52,23 +52,23 @@ const CoCreateScroll = {
 			}
 
 			if (timer != null) {
-				clearTimeout(timer)
+				clearTimeout(timer);
 			}
 
 			elements.forEach((el) => {
 				self.__runScrollEvent(el, scrollInfo);
 				self.__setScrolling(el, scrollInfo, false);
-			})
+			});
 
 			timer = setTimeout(function() {
 				elements.forEach((el) => {
 					self.__setScrolling(el, scrollInfo, true);
-				})
-			}, 500)
+				});
+			}, 500);
 		});
 
 		if (intersectValue && window.IntersectionObserver && this.observer) {
-			this.observer.observe(element)
+			this.observer.observe(element);
 		}
 	},
 
@@ -77,31 +77,31 @@ const CoCreateScroll = {
 		this.observer = new IntersectionObserver(entries => {
 			entries.forEach(entry => {
 				let element = entry.target;
-				const attrName = element.dataset['scroll_attribute'] || 'class';
-				const targetSelector = element.dataset['scroll_target'];
-				const intersectValue = element.dataset['scroll_intersect']
+				const attrName = element.getAttribute('scroll-attribute') || 'class';
+				const targetSelector = element.getAttribute('scroll-target');
+				const intersectValue = element.getAttribute('scroll-intersect');
 
-				let targetElements = [element]
+				let targetElements = [element];
 				if (targetSelector) {
 					targetElements = document.querySelectorAll(targetSelector);
 				}
 				if (entry.isIntersecting > 0) {
-					targetElements.forEach((el) => self.__addAttributeValue(el, attrName, intersectValue))
+					targetElements.forEach((el) => self.__addAttributeValue(el, attrName, intersectValue));
 				}
 				else {
-					targetElements.forEach((el) => self.__removeAttrbuteValue(el, attrName, intersectValue))
+					targetElements.forEach((el) => self.__removeAttrbuteValue(el, attrName, intersectValue));
 				}
-			})
+			});
 		});
 	},
 
 	__setScrolling: function(element, info, stopped = false) {
 		const { scrolling, attrName } = info;
 		if (stopped) {
-			this.__removeAttrbuteValue(element, attrName, scrolling)
+			this.__removeAttrbuteValue(element, attrName, scrolling);
 		}
 		else {
-			this.__addAttributeValue(element, attrName, scrolling)
+			this.__addAttributeValue(element, attrName, scrolling);
 		}
 	},
 
@@ -142,11 +142,11 @@ const CoCreateScroll = {
 			this.__removeAttrbuteValue(element, attrName, scrollBottom);
 		}
 
-		element.scrollStatus.currentPos = scrollY
+		element.scrollStatus.currentPos = scrollY;
 	},
 
 	__addAttributeValue: function(element, attrName, value) {
-		if (!value) return
+		if (!value) return;
 		let check = new RegExp("(\\s|^)" + value + "(\\s|$)");
 		let attrValue = element.getAttribute(attrName) || "";
 
@@ -157,7 +157,7 @@ const CoCreateScroll = {
 	},
 
 	__removeAttrbuteValue: function(element, attrName, value) {
-		if (!value) return
+		if (!value) return;
 		let check = new RegExp("(\\s|^)" + value + "(\\s|$)");
 		let attrValue = element.getAttribute(attrName) || "";
 
@@ -190,17 +190,17 @@ const CoCreateScroll = {
 
 
 
-}
+};
 
 CoCreateScroll.init();
 
 observer.init({
 	name: 'CoCreateScrollCreate',
 	observe: ['addedNodes'],
-	target: '[data-scroll]',
+	target: '[scroll]',
 	callback: function(mutation) {
 
-		CoCreateScroll.initElement(mutation.target)
+		CoCreateScroll.initElement(mutation.target);
 	}
 });
 
