@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.1...v1.1.2) (2021-08-02)
+
+
+### Bug Fixes
+
+* remove data- from attributes ([88e076f](https://github.com/CoCreate-app/CoCreate-scroll/commit/88e076f5727fdf142749a1f25ea58cc1be81ea55))
+* removed data- from scroll attributes ([dcb2305](https://github.com/CoCreate-app/CoCreate-scroll/commit/dcb23053cf5ee7dcc4e51c3999051c5203855b68))
+* update data-fullscreen to fullscreen ([0486fc9](https://github.com/CoCreate-app/CoCreate-scroll/commit/0486fc92ec55af121747b147d29ac9c133a6a32d))
+
 ## [1.1.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.0...v1.1.1) (2021-07-28)
 
 
