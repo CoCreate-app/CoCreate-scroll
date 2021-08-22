@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.4...v1.1.5) (2021-08-22)
+
+
+### Bug Fixes
+
+* removed data- from main-content, clone, filter-value_type ([4ca269a](https://github.com/CoCreate-app/CoCreate-scroll/commit/4ca269a59981a15d4318b10064888176d3ada582))
+
 ## [1.1.4](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.3...v1.1.4) (2021-08-22)
 
 
