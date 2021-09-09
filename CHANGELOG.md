@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.10...v1.1.11) (2021-09-09)
+
+
+### Bug Fixes
+
+* CoCreate.config directory, path, name and  public ([74c1851](https://github.com/CoCreate-app/CoCreate-scroll/commit/74c1851e819d45921f3a6fa8da2dc99f1ed3f4a5))
+
 ## [1.1.10](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.9...v1.1.10) (2021-09-08)
 
 
