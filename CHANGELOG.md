@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.14...v1.1.15) (2021-09-12)
+
+
+### Bug Fixes
+
+* update sidenav to use resize and toggle ([37c64ef](https://github.com/CoCreate-app/CoCreate-scroll/commit/37c64ef17a6a0d3cd7d8258898b292a8d7b831a2))
+
 ## [1.1.14](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.13...v1.1.14) (2021-09-09)
 
 
