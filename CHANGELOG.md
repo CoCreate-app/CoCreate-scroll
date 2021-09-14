@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.16...v1.1.17) (2021-09-14)
+
+
+### Bug Fixes
+
+* add cocreate.app to domains ([a09d427](https://github.com/CoCreate-app/CoCreate-scroll/commit/a09d4275353494ff96b73329d422d79dc6ca56de))
+
 ## [1.1.16](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.15...v1.1.16) (2021-09-13)
 
 
