@@ -1,3 +1,11 @@
+## [1.1.24](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.23...v1.1.24) (2021-10-05)
+
+
+### Bug Fixes
+
+* update dependencies ([08b1eb2](https://github.com/CoCreate-app/CoCreate-scroll/commit/08b1eb24622911384503ade49c27e154f3ab1196))
+* website_id in CoCreate.config ([f2b282c](https://github.com/CoCreate-app/CoCreate-scroll/commit/f2b282ccb709499b4bbcf723fa45c1aff9c96fc5))
+
 ## [1.1.23](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.22...v1.1.23) (2021-10-04)
 
 
