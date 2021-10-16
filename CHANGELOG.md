@@ -1,3 +1,10 @@
+## [1.1.31](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.30...v1.1.31) (2021-10-16)
+
+
+### Bug Fixes
+
+* update socket package to fix bug in docs ([955988c](https://github.com/CoCreate-app/CoCreate-scroll/commit/955988c73e7daa4a653a9cc38da69a06229c9f58))
+
 ## [1.1.30](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.29...v1.1.30) (2021-10-15)
 
 
