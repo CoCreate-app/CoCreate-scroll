@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.36...v1.2.0) (2021-11-05)
+
+
+### Features
+
+* scroll runs on load and added a new attribute scroll-limbo fires when not top or bottom its limbo ([16d8356](https://github.com/CoCreate-app/CoCreate-scroll/commit/16d835680227ca79f056805a87a496cc0814242e))
+
 ## [1.1.36](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.1.35...v1.1.36) (2021-11-04)
 
 
