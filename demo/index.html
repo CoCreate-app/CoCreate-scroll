@@ -9,16 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CoCreate - Build your business in minutes.</title>
     
-    <!-- CoCreate UI -->
-    <!--<link rel="stylesheet" href="https://cdn.cocreate.app/CoCreate.min.css" type="text/css" />-->
-    <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
-    <!--<link rel="stylesheet" href="https://server.cocreate.app/CoCreate-components/CoCreate-overlay-scroll/CoCreate-overlay-scroll.css" type="text/css" />-->
-   
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
-   
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   </head>
 
 <style>
@@ -53,13 +43,19 @@
     background-color: gray;
   }
   
+  
+  .scroll_top {
+    background-color: red;
+  }
+  
+  .scroll_limbo {
+    background-color: green;
+  }
+
   .scroll_bottom {
     background-color: blue;
   }
   
-  .scroll_top, .testing {
-    background-color: red;
-  }
 
 </style>  
   <body>
@@ -69,6 +65,7 @@
       scroll="hidden, sticky-nav"
       scrolling="scrolling"
       scroll-top="scroll_top"
+      scroll-limbo="scroll_limbo"
       scroll-bottom="scroll_bottom"
       scroll-up="10"
       scroll-down="5">
@@ -77,7 +74,7 @@
       <div class="margin:0px_15px display:flex flex-wrap:wrap justify-content:space-between flex-direction:row align-items:center width:100%">
         <div class="logo-box">
           <a href="/">
-            <img src="https://server.cocreate.app/CoCreate-website/images/logo.png"/>
+            <img src="https://cocreate.app/assets/logo.png"/>
           </a>
         </div>
          
@@ -114,7 +111,7 @@
         <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
           <div class="flex-grow:1 min-width:300px width:50%">
             <video loop autoplay muted class="width:100%">
-              <source src="https://server.cocreate.app/CoCreate-website/images/dashboard-video.mp4" type="video/mp4">
+              <source src="https://cocreate.app/assets/dashboard-video.mp4" type="video/mp4">
             </video>
           </div>
           <div class="flex-grow:1 min-width:300px width:50% padding:0px_15px font-size:16px ">
@@ -129,25 +126,25 @@
       <div class="max-width:90% margin:0px_auto">
         <div class="padding:25px_0px display:flex flex-wrap:wrap justify-content:space-between flex-direction:row align-items:center">
           <div class="padding:0px_10px">
-            <img src="https://server.cocreate.app/CoCreate-website/images/client-01.png" class="max-height:60px width:auto"></img>
+            <img src="https://cocreate.app/assets/client-01.png" class="max-height:60px width:auto"></img>
           </div>
           <div class="padding:0px_10px">
-            <img src="https://server.cocreate.app/CoCreate-website/images/client-02.png" class="max-height:60px width:auto"></img>
+            <img src="https://cocreate.app/assets/client-02.png" class="max-height:60px width:auto"></img>
           </div>
           <div class="padding:0px_10px">
-            <img src="https://server.cocreate.app/CoCreate-website/images/client-03.png" class="max-height:60px width:auto"></img>
+            <img src="https://cocreate.app/assets/client-03.png" class="max-height:60px width:auto"></img>
           </div>
           <div class="padding:0px_10px">
-            <img src="https://server.cocreate.app/CoCreate-website/images/client-04.png" class="max-height:60px width:auto"></img>
+            <img src="https://cocreate.app/assets/client-04.png" class="max-height:60px width:auto"></img>
           </div>
           <div class="padding:0px_10px">
-            <img src="https://server.cocreate.app/CoCreate-website/images/client-05.png" class="max-height:60px width:auto"></img>
+            <img src="https://cocreate.app/assets/client-05.png" class="max-height:60px width:auto"></img>
           </div>
           <div class="padding:0px_10px">
-            <img src="https://server.cocreate.app/CoCreate-website/images/client-06.png" class="max-height:60px width:auto"></img>
+            <img src="https://cocreate.app/assets/client-06.png" class="max-height:60px width:auto"></img>
           </div>
           <div class="padding:0px_10px">
-            <img src="https://server.cocreate.app/CoCreate-website/images/client-07.png" class="max-height:60px width:auto"></img>
+            <img src="https://cocreate.app/assets/client-07.png" class="max-height:60px width:auto"></img>
           </div>
         </div>
       </div>
@@ -157,7 +154,7 @@
         <div class="display:flex flex-wrap:wrap align-items:center">
           <div class="flex-grow:1 min-width:300px width:50%">
             <video loop muted class="width:100%">
-              <source type="video/mp4" src="https://server.cocreate.app/CoCreate-website/images/on-board-video.webm">
+              <source type="video/mp4" src="https://cocreate.app/assets/on-board-video.webm">
             </video>
           </div>
           <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
@@ -174,7 +171,7 @@
         <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
           <div class="flex-grow:1 min-width:300px width:50%">
             <video loop muted class="width:100%"  scroll="" scroll-intersect="testing">
-              <source type="video/mp4" src="https://server.cocreate.app/CoCreate-website/images/cards.webm"></source>
+              <source type="video/mp4" src="https://cocreate.app/assets/cards.webm"></source>
             </video>
           </div>
           <div class="flex-grow:1 min-width:300px width:50% padding-left:15px padding-right:15px">
@@ -184,7 +181,7 @@
         </div>
       </div>
     </section>
-    <footer id="spreadtheword" class="padding:100px_0px background-size:cover background-position:center position:relative color:white" style="background-image:url(https://server.cocreate.app/CoCreate-website/images/banner.png)">
+    <footer id="spreadtheword" class="padding:100px_0px background-size:cover background-position:center position:relative color:white" style="background-image:url(https://cocreate.app/assets/banner.png)">
       <div class="position:relative max-width:90% margin:0px_auto">
         <h1 class="text-align:center padding-bottom:20px">SPREAD THE WORD!</h1>
     					
@@ -229,14 +226,7 @@
   	  </ul>
     </div>
 
-	    <script>
-	      var config = {
-	        apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
-	        organization_Id: '5de0387b12e200ea63204d6c',
-	        host: 'ws.cocreate.app'
-	      }
-	    </script>
-	    
+
         <!--<script src="../dist/CoCreate-selected.js"></script>-->
 	    <script src="../../../CoCreateJS/dist/CoCreate.js" ></script>
 

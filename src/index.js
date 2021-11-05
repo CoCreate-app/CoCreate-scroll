@@ -31,6 +31,7 @@ const CoCreateScroll = {
 			upSize: upSize,
 			downSize: downSize,
 			scrollTop: element.getAttribute('scroll-top'),
+			scrollLimbo: element.getAttribute('scroll-limbo'),
 			scrollBottom: element.getAttribute('scroll-bottom'),
 			scrolling: element.getAttribute('scrolling')
 		};
@@ -43,6 +44,8 @@ const CoCreateScroll = {
 		elements.forEach(el => {
 			el.scrollStatus = { currentPos: 0 };
 		});
+		
+		this.__runScrollEvent(element, scrollInfo);		
 
 		let timer = null;
 		window.addEventListener('scroll', function(event) {
@@ -66,7 +69,6 @@ const CoCreateScroll = {
 				});
 			}, 500);
 		});
-
 		if (intersectValue && window.IntersectionObserver && this.observer) {
 			this.observer.observe(element);
 		}
@@ -109,7 +111,7 @@ const CoCreateScroll = {
 
 		const currentPos = element.scrollStatus.currentPos;
 		const scrollY = window.scrollY;
-		const { upSize, downSize, attrName, values, scrollTop, scrollBottom } = info;
+		const { upSize, downSize, attrName, values, scrollTop, scrollBottom, scrollLimbo } = info;
 
 		if (upSize < (currentPos - scrollY)) {
 			this.__addAttributeValue(element, attrName, values[0]);
@@ -132,7 +134,7 @@ const CoCreateScroll = {
 		}
 
 		//. scroll bottom case
-		if ((window.innerHeight + scrollY) >= document.body.scrollHeight - this.delta) {
+		if ((window.innerHeight + scrollY) >= document.body.scrollHeight) {
 			// this.__removeAttrbuteValue(element, attrName, values[0]);
 			// this.__removeAttrbuteValue(element, attrName, values[1]);
 
@@ -140,6 +142,13 @@ const CoCreateScroll = {
 		}
 		else {
 			this.__removeAttrbuteValue(element, attrName, scrollBottom);
+		}
+		
+		if (scrollY != 0 && (scrollY + window.innerHeight) != document.body.scrollHeight){
+			this.__addAttributeValue(element, attrName, scrollLimbo);
+		}
+		else {
+			this.__removeAttrbuteValue(element, attrName, scrollLimbo);
 		}
 
 		element.scrollStatus.currentPos = scrollY;
