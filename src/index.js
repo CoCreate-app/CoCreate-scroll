@@ -201,8 +201,6 @@ const CoCreateScroll = {
 
 };
 
-CoCreateScroll.init();
-
 observer.init({
 	name: 'CoCreateScrollCreate',
 	observe: ['addedNodes'],
@@ -212,5 +210,7 @@ observer.init({
 		CoCreateScroll.initElement(mutation.target);
 	}
 });
+
+CoCreateScroll.init();
 
 export default CoCreateScroll;
