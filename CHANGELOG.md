@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.1...v1.2.2) (2021-11-07)
+
+
+### Bug Fixes
+
+* add init() directly above export default to fix bug in firefox ([b73c7b0](https://github.com/CoCreate-app/CoCreate-scroll/commit/b73c7b07016d7909fe474d17576ac9a5d435b75e))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.0...v1.2.1) (2021-11-06)
 
 
