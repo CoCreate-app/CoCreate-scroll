@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.10...v1.2.11) (2021-11-26)
+
+
+### Bug Fixes
+
+* docs sidenav width ([12de3da](https://github.com/CoCreate-app/CoCreate-scroll/commit/12de3da676cf14dcb862debeca44635e33c7a1d0))
+
 ## [1.2.10](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.9...v1.2.10) (2021-11-26)
 
 
