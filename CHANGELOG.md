@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.11...v1.2.12) (2021-11-27)
+
+
+### Bug Fixes
+
+* update docs api and cocreateJS script ([bc18a2e](https://github.com/CoCreate-app/CoCreate-scroll/commit/bc18a2e13d0e9284f3fada557aa839176f5e4c8f))
+
 ## [1.2.11](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.10...v1.2.11) (2021-11-26)
 
 
