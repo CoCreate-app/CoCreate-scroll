@@ -1,3 +1,10 @@
+## [1.2.17](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.16...v1.2.17) (2022-01-01)
+
+
+### Bug Fixes
+
+* removed data- from attributes ([0a5996a](https://github.com/CoCreate-app/CoCreate-scroll/commit/0a5996a174492ba2d88a495c37e2d743a5e14e55))
+
 ## [1.2.16](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.15...v1.2.16) (2021-12-15)
 
 
