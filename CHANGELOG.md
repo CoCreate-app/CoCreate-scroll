@@ -1,3 +1,10 @@
+## [1.2.19](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.18...v1.2.19) (2022-01-16)
+
+
+### Bug Fixes
+
+* update class overflow:overlay to overflow:auto ([bd60036](https://github.com/CoCreate-app/CoCreate-scroll/commit/bd6003620fa1d563c84fd4c4f279896b6ff64154))
+
 ## [1.2.18](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.17...v1.2.18) (2022-01-01)
 
 
