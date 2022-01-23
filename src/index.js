@@ -108,7 +108,7 @@ const CoCreateScroll = {
 	},
 
 	__runScrollEvent: function(element, info) {
-
+		if (!element.scrollStatus) return
 		const currentPos = element.scrollStatus.currentPos;
 		const scrollY = window.scrollY;
 		const { upSize, downSize, attrName, values, scrollTop, scrollBottom, scrollLimbo } = info;
