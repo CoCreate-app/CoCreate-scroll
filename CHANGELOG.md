@@ -1,3 +1,10 @@
+## [1.2.20](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.19...v1.2.20) (2022-01-23)
+
+
+### Bug Fixes
+
+* scroll bug ([f67c52b](https://github.com/CoCreate-app/CoCreate-scroll/commit/f67c52bc51be1ebbef9a06a4b103d747934b8253))
+
 ## [1.2.19](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.18...v1.2.19) (2022-01-16)
 
 
