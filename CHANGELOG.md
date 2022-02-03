@@ -1,3 +1,10 @@
+## [1.2.22](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.21...v1.2.22) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([fc5f3ae](https://github.com/CoCreate-app/CoCreate-scroll/commit/fc5f3ae759df2d4d31fefc6a419acb34c3c1bfc8))
+
 ## [1.2.21](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.20...v1.2.21) (2022-02-01)
 
 
