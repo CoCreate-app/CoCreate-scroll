@@ -1,3 +1,10 @@
+## [1.2.26](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.25...v1.2.26) (2022-02-24)
+
+
+### Bug Fixes
+
+* CoCreate.config replace CoCreate.app with * ([1108943](https://github.com/CoCreate-app/CoCreate-scroll/commit/1108943b97f98ccaed88d1f1b1a16de706a65a0b))
+
 ## [1.2.25](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.24...v1.2.25) (2022-02-16)
 
 
