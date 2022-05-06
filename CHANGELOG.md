@@ -1,3 +1,10 @@
+## [1.2.27](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.26...v1.2.27) (2022-05-06)
+
+
+### Bug Fixes
+
+* update config organization_Id to organization_id ([e1a7a43](https://github.com/CoCreate-app/CoCreate-scroll/commit/e1a7a43ba6cec9c6ad0810ece67fe88a58ac0322))
+
 ## [1.2.26](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.25...v1.2.26) (2022-02-24)
 
 
