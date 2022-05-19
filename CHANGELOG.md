@@ -1,3 +1,10 @@
+## [1.2.28](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.27...v1.2.28) (2022-05-19)
+
+
+### Bug Fixes
+
+* update document_id on link index.css ([501ef76](https://github.com/CoCreate-app/CoCreate-scroll/commit/501ef76623dc3d0989387f70b053939247943539))
+
 ## [1.2.27](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.26...v1.2.27) (2022-05-06)
 
 
