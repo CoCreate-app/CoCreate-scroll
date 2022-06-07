@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.29...v1.3.0) (2022-06-07)
+
+
+### Features
+
+* sortable-element to define a scroll element defaults to window ([dd0b493](https://github.com/CoCreate-app/CoCreate-scroll/commit/dd0b49330b89afc6526b5ea9c81f7166615a57c0))
+
 ## [1.2.29](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.28...v1.2.29) (2022-05-23)
 
 
