@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.0...v1.3.1) (2022-06-12)
+
+
+### Bug Fixes
+
+* update dependencies ([d131faf](https://github.com/CoCreate-app/CoCreate-scroll/commit/d131faf0964cff3be5d1bfe9bcff30272c0d76d0))
+* update docs css document_id ([4535a55](https://github.com/CoCreate-app/CoCreate-scroll/commit/4535a5565c58b5faa02a31f9b8fce3c92b343568))
+
 # [1.3.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.2.29...v1.3.0) (2022-06-07)
 
 
