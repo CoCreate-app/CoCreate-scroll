@@ -74,7 +74,7 @@ const CoCreateScroll = {
 		const self = this;
 		if (!element.scrollStatus) return;
 		let scrollEl = scrollableEl || window;
-		if (Math.abs(scrollEl.scrollTop - element.scrollStatus.currentPos) <= self.delta) {
+		if (Math.abs(scrollEl.scrollTop || scrollEl.scrollY - element.scrollStatus.currentPos) <= self.delta) {
 			return;
 		}
 
