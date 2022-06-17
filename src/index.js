@@ -4,6 +4,7 @@ const CoCreateScroll = {
 	delta: 3,
 	observer: null,
 	elementList: new Map(),
+	timer: null,
 
 	init: function() {
 		let elements = document.querySelectorAll(`[scroll]`);
@@ -55,10 +56,11 @@ const CoCreateScroll = {
 			scrollableElements = document.querySelectorAll(scrollSelector);
 		
 		if (scrollableElements) {
-			for (let scrollableEl of scrollableElements)
-			scrollableEl.addEventListener('scroll', function(event) {
-				self._scrollEvent(elements, element, scrollInfo, scrollableEl)
-			});	
+			for (let scrollableEl of scrollableElements) {
+				scrollableEl.addEventListener('scroll', function(event) {
+					self._scrollEvent(elements, element, scrollInfo, scrollableEl)
+				});	
+			}
 		} else {
 			window.addEventListener('scroll', function(event) {
 				self._scrollEvent(elements, element, scrollInfo)
@@ -72,27 +74,30 @@ const CoCreateScroll = {
 	
 	_scrollEvent: function(elements, element, scrollInfo, scrollableEl) {
 		const self = this;
+		if (self.timer != null) return
 		if (!element.scrollStatus) return;
 		let scrollEl = scrollableEl || window;
 		if (Math.abs(scrollEl.scrollTop - element.scrollStatus.currentPos) <= self.delta) {
 			return;
 		}
 
-		let timer = null;
-		if (timer != null) {
-			clearTimeout(timer);
-		}
+		// if (timer != null) {
+		// 	clearTimeout(timer);
+		// }
 
 		elements.forEach((el) => {
 			self.__runScrollEvent(el, scrollInfo, scrollableEl);
 			self.__setScrolling(el, scrollInfo, false);
 		});
 
-		timer = setTimeout(function() {
+		self.timer = setTimeout(function() {
 			elements.forEach((el) => {
+				// self.__runScrollEvent(el, scrollInfo, scrollableEl);
 				self.__setScrolling(el, scrollInfo, true);
 			});
-		}, 500);
+			self.timer = null;
+			// clearTimeout(self.timer);
+		}, 700);
 	},
 
 	__initIntersectionObserver: function() {
