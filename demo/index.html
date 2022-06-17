@@ -40,7 +40,7 @@
   }
   
   .scrolling {
-    background-color: gray;
+    background-color: rgb(226, 31, 210);
   }
   
   
@@ -62,13 +62,12 @@
     <!-- Navbar  -->
     <div class="display:flex flex-wrap:wrap justify-content:space-between flex-direction:row padding-top:10px padding-bottom:10px width:100% nav"
       content_id="content"
-      scroll="hidden, sticky-nav"
-      scrolling="scrolling"
       scroll-top="scroll_top"
-      scroll-limbo="scroll_limbo"
       scroll-bottom="scroll_bottom"
+      scroll="hidden, sticky-nav"
       scroll-up="10"
-      scroll-down="5">
+      scroll-down="5"
+      >
 
       <!--<a href="#" class="logo">Navbar</a>-->
       <div class="margin:0px_15px display:flex flex-wrap:wrap justify-content:space-between flex-direction:row align-items:center width:100%">
@@ -106,7 +105,7 @@
         </div>
       </div>
     </div>
-    <section class="padding-top:80px padding-bottom:40px   ">
+    <section class="padding-top:80px padding-bottom:40px" scroll scrolling="scrolling">
       <div class=" max-width:90% margin:0px_auto">
         <div class="display:flex flex-wrap:wrap align-items:center flex-direction:row-reverse">
           <div class="flex-grow:1 min-width:300px width:50%">
@@ -122,7 +121,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-light-gray padding:25px_0px">
+    <section class="bg-light-gray padding:25px_0px" scroll scroll-limbo="scroll_limbo">
       <div class="max-width:90% margin:0px_auto">
         <div class="padding:25px_0px display:flex flex-wrap:wrap justify-content:space-between flex-direction:row align-items:center">
           <div class="padding:0px_10px">
@@ -227,7 +226,6 @@
     </div>
 
 
-        <!--<script src="../dist/CoCreate-selected.js"></script>-->
 	    <script src="../../../CoCreateJS/dist/CoCreate.js" ></script>
 
   </body>

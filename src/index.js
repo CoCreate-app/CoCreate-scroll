@@ -5,6 +5,7 @@ const CoCreateScroll = {
 	observer: null,
 	elementList: new Map(),
 	timer: null,
+	firedEvents: new Map(),
 
 	init: function() {
 		let elements = document.querySelectorAll(`[scroll]`);
@@ -49,7 +50,7 @@ const CoCreateScroll = {
 			el.scrollStatus = { currentPos: 0 };
 		});
 		
-		this.__runScrollEvent(element, scrollInfo);		
+		// this.__runScrollEvent(element, scrollInfo);		
 
 		let scrollableElements;
 		if (scrollSelector)
@@ -61,7 +62,8 @@ const CoCreateScroll = {
 					self._scrollEvent(elements, element, scrollInfo, scrollableEl)
 				});	
 			}
-		} else {
+		} else{
+			// this.WindowInit = true;
 			window.addEventListener('scroll', function(event) {
 				self._scrollEvent(elements, element, scrollInfo)
 			});	
@@ -74,30 +76,40 @@ const CoCreateScroll = {
 	
 	_scrollEvent: function(elements, element, scrollInfo, scrollableEl) {
 		const self = this;
-		if (self.timer != null) return
 		if (!element.scrollStatus) return;
 		let scrollEl = scrollableEl || window;
-		if (Math.abs(scrollEl.scrollTop - element.scrollStatus.currentPos) <= self.delta) {
+		if (Math.abs(scrollEl.scrollTop || scrollEl.scrollY - element.scrollStatus.currentPos) <= self.delta) {
 			return;
 		}
 
-		// if (timer != null) {
-		// 	clearTimeout(timer);
-		// }
+		let timer = null;
+		if (timer != null) {
+			clearTimeout(timer);
+		}
 
 		elements.forEach((el) => {
-			self.__runScrollEvent(el, scrollInfo, scrollableEl);
 			self.__setScrolling(el, scrollInfo, false);
+			// self.__runScrollEvent(el, scrollInfo, scrollableEl);
+
 		});
 
-		self.timer = setTimeout(function() {
+		timer = setTimeout(function() {
 			elements.forEach((el) => {
-				// self.__runScrollEvent(el, scrollInfo, scrollableEl);
 				self.__setScrolling(el, scrollInfo, true);
 			});
-			self.timer = null;
-			// clearTimeout(self.timer);
-		}, 700);
+		}, 500);
+
+		if (!self.firedEvents.has(element)) {
+			self.firedEvents.set(element, element)
+			elements.forEach((el) => {
+				self.__runScrollEvent(el, scrollInfo, scrollableEl);
+			});
+			setTimeout(function() {
+				self.firedEvents.delete(element)
+				// clearTimeout(eventTimer)
+			}, 300);
+		}
+
 	},
 
 	__initIntersectionObserver: function() {
