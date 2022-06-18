@@ -3,7 +3,6 @@ import observer from '@cocreate/observer';
 const CoCreateScroll = {
 	delta: 3,
 	observer: null,
-	elementList: new Map(),
 	timer: null,
 	firedEvents: new Map(),
 
