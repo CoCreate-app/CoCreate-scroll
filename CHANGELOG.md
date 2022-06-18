@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.2...v1.3.3) (2022-06-18)
+
+
+### Bug Fixes
+
+* fix scroll event loop ([59f6998](https://github.com/CoCreate-app/CoCreate-scroll/commit/59f6998d5c4f562584efa3b64793381a3e49ebe6))
+
 ## [1.3.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.1...v1.3.2) (2022-06-17)
 
 
