@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.4...v1.3.5) (2022-06-19)
+
+
+### Bug Fixes
+
+* removed scroll-element support as it was causing a loop. Moved to branch newScroll fordebugging ([f8d99c7](https://github.com/CoCreate-app/CoCreate-scroll/commit/f8d99c707b0e87032f7dd547b3342d308182c6d6))
+
 ## [1.3.4](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.3...v1.3.4) (2022-06-18)
 
 
