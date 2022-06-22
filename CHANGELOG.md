@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.5...v1.3.6) (2022-06-22)
+
+
+### Bug Fixes
+
+* compare datetime to break infinite loop on scroll up and scroll down ([c86b317](https://github.com/CoCreate-app/CoCreate-scroll/commit/c86b3170a9335acf895006de54d10b2cc3fc2ab0))
+
 ## [1.3.5](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.4...v1.3.5) (2022-06-19)
 
 
