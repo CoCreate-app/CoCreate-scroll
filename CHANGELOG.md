@@ -1,3 +1,10 @@
+## [1.3.15](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.14...v1.3.15) (2022-11-21)
+
+
+### Bug Fixes
+
+* bump d@cocreate ependencies ([db25c1c](https://github.com/CoCreate-app/CoCreate-scroll/commit/db25c1c88a15a321c5bda05425b3ec8826e634ab))
+
 ## [1.3.14](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.13...v1.3.14) (2022-10-02)
 
 
