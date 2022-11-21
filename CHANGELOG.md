@@ -1,3 +1,10 @@
+## [1.3.17](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.16...v1.3.17) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([c27c990](https://github.com/CoCreate-app/CoCreate-scroll/commit/c27c990bc8f7fc47e7e3a30decc748d2c87edc63))
+
 ## [1.3.16](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.15...v1.3.16) (2022-11-21)
 
 
