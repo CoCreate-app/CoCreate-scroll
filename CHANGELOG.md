@@ -1,3 +1,11 @@
+## [1.3.19](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.18...v1.3.19) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([b7b5449](https://github.com/CoCreate-app/CoCreate-scroll/commit/b7b5449567248f5b67b07b3663e08d158b0cdf65))
+* workflow docs ([264d373](https://github.com/CoCreate-app/CoCreate-scroll/commit/264d373aa03883a3c0731349b2b99a226759fe9e))
+
 ## [1.3.18](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.17...v1.3.18) (2022-11-21)
 
 
