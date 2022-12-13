@@ -1,3 +1,10 @@
+## [1.3.36](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.35...v1.3.36) (2022-12-13)
+
+
+### Bug Fixes
+
+* removed un used devDependencies ([3685d22](https://github.com/CoCreate-app/CoCreate-scroll/commit/3685d2286941fa25e36474d0ed5745676968def3))
+
 ## [1.3.35](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.34...v1.3.35) (2022-12-13)
 
 
