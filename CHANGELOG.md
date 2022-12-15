@@ -1,3 +1,10 @@
+## [1.3.37](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.36...v1.3.37) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([ac00a29](https://github.com/CoCreate-app/CoCreate-scroll/commit/ac00a29fd657f5401faf7ab923e08dce55d9e159))
+
 ## [1.3.36](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.35...v1.3.36) (2022-12-13)
 
 
