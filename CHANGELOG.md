@@ -1,3 +1,10 @@
+## [1.3.46](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.45...v1.3.46) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([c48ecde](https://github.com/CoCreate-app/CoCreate-scroll/commit/c48ecdef07fcf80c19959a08f1a76d52a3abd7c4))
+
 ## [1.3.45](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.44...v1.3.45) (2022-12-29)
 
 
