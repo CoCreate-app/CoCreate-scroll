@@ -1,3 +1,10 @@
+## [1.3.48](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.47...v1.3.48) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([cea40e3](https://github.com/CoCreate-app/CoCreate-scroll/commit/cea40e3dd5d3d261841f879402be6c9711a3192b))
+
 ## [1.3.47](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.46...v1.3.47) (2022-12-31)
 
 
