@@ -1,3 +1,11 @@
+## [1.3.49](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.48...v1.3.49) (2023-01-05)
+
+
+### Bug Fixes
+
+* bump cdn to 1.39.4 ([a851d69](https://github.com/CoCreate-app/CoCreate-scroll/commit/a851d69fa0a71d4a492554c595abeba5e3ef927f))
+* bump dependencies ([b205994](https://github.com/CoCreate-app/CoCreate-scroll/commit/b205994dea93cde63cafd0d7c671a81e4050b9da))
+
 ## [1.3.48](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.47...v1.3.48) (2023-01-01)
 
 
