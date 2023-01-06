@@ -1,3 +1,11 @@
+## [1.3.50](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.49...v1.3.50) (2023-01-06)
+
+
+### Bug Fixes
+
+* bump dependencies, worklow [@v3](https://github.com/v3) ([0cc096b](https://github.com/CoCreate-app/CoCreate-scroll/commit/0cc096b8832f9266a84a4405376f9b47c98e8b66))
+* edit in github btn styles ([e6fa05b](https://github.com/CoCreate-app/CoCreate-scroll/commit/e6fa05b05f878d1e9b4d1f1158361575fd37051d))
+
 ## [1.3.49](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.48...v1.3.49) (2023-01-05)
 
 
