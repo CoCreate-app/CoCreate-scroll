@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.58...v1.4.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([b2941c8](https://github.com/CoCreate-app/CoCreate-scroll/commit/b2941c8717812fd4deb60eb2e90016c6d37e6b4e))
+
 ## [1.3.58](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.3.57...v1.3.58) (2023-02-01)
 
 
