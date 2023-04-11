@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.4.3...v1.4.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([e7bb782](https://github.com/CoCreate-app/CoCreate-scroll/commit/e7bb782d502ffaf08769bca53ee8ff50a755cad2))
+
 ## [1.4.3](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.4.2...v1.4.3) (2023-03-30)
 
 
