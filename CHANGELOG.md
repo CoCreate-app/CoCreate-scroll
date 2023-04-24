@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.4.6...v1.5.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([811db48](https://github.com/CoCreate-app/CoCreate-scroll/commit/811db4832ae722d6b0da72d6a761d2d76237ad1f))
+
 ## [1.4.6](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.4.5...v1.4.6) (2023-04-11)
 
 
