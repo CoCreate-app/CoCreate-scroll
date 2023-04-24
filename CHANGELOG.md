@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.0...v1.5.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([02c9d58](https://github.com/CoCreate-app/CoCreate-scroll/commit/02c9d5862e4685ee7722e1544af9b36ddf39b8fb))
+
 # [1.5.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.4.6...v1.5.0) (2023-04-24)
 
 
