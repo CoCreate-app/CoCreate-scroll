@@ -1,3 +1,11 @@
+## [1.5.3](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.2...v1.5.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([8ea727c](https://github.com/CoCreate-app/CoCreate-scroll/commit/8ea727cb51f17e44573e0fc66d1fdf207b439d65))
+* workflow node version updated  16 ([c0aa9f1](https://github.com/CoCreate-app/CoCreate-scroll/commit/c0aa9f156294d620ebce0c4fc164dc79d760c9e3))
+
 ## [1.5.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.1...v1.5.2) (2023-04-24)
 
 
