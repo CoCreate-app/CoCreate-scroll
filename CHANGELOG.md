@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.5...v1.5.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([e6efc06](https://github.com/CoCreate-app/CoCreate-scroll/commit/e6efc06917da036935b9aeeb5727ece15cf282c6))
+
 ## [1.5.5](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.4...v1.5.5) (2023-05-01)
 
 
