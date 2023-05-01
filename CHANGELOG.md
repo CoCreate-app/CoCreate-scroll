@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.4...v1.5.5) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([14af515](https://github.com/CoCreate-app/CoCreate-scroll/commit/14af5155856cc0b914b2f380517bd11175f50504))
+
 ## [1.5.4](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.3...v1.5.4) (2023-04-30)
 
 
