@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.6...v1.5.7) (2023-05-06)
+
+
+### Bug Fixes
+
+* bump [@cocreate](https://github.com/cocreate) dependencies ([c51de49](https://github.com/CoCreate-app/CoCreate-scroll/commit/c51de49209ac82edec5d4545b9de7a8dbf38ecd6))
+
 ## [1.5.6](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.5...v1.5.6) (2023-05-01)
 
 
