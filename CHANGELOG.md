@@ -1,3 +1,10 @@
+## [1.5.8](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.7...v1.5.8) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([9542ac0](https://github.com/CoCreate-app/CoCreate-scroll/commit/9542ac087c9667be61984a4e7a6848a386e3c746))
+
 ## [1.5.7](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.6...v1.5.7) (2023-05-06)
 
 
