@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.8...v1.5.9) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([a423c23](https://github.com/CoCreate-app/CoCreate-scroll/commit/a423c23804e9c9418a250b91bb4e05655e6c8005))
+
 ## [1.5.8](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.7...v1.5.8) (2023-05-10)
 
 
