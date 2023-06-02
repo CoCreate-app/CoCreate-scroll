@@ -1,3 +1,11 @@
+## [1.5.11](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.10...v1.5.11) (2023-06-02)
+
+
+### Bug Fixes
+
+* format demo html ([ca10891](https://github.com/CoCreate-app/CoCreate-scroll/commit/ca10891e2cbcb07a6eb74ee4b06c28a7506e941e))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([d7ecf15](https://github.com/CoCreate-app/CoCreate-scroll/commit/d7ecf15f0bb151f98a5c60599cbf4d4ad6714ac1))
+
 ## [1.5.10](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.9...v1.5.10) (2023-05-21)
 
 
