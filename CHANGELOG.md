@@ -1,3 +1,10 @@
+## [1.5.14](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.13...v1.5.14) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([1f42ae4](https://github.com/CoCreate-app/CoCreate-scroll/commit/1f42ae456856150911f290cd4a1ec91fe596db4e))
+
 ## [1.5.13](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.12...v1.5.13) (2023-06-04)
 
 
