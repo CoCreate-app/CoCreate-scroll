@@ -1,3 +1,11 @@
+## [1.5.13](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.12...v1.5.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([2fc3e6d](https://github.com/CoCreate-app/CoCreate-scroll/commit/2fc3e6d681b48c769fcc72036b1e884005c6cb4e))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([d45f60e](https://github.com/CoCreate-app/CoCreate-scroll/commit/d45f60ef043bdd28911047f5948ce7085f678f0b))
+
 ## [1.5.12](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.11...v1.5.12) (2023-06-04)
 
 
