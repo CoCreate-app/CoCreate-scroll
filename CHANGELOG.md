@@ -1,3 +1,10 @@
+## [1.5.19](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.18...v1.5.19) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([efb82ae](https://github.com/CoCreate-app/CoCreate-scroll/commit/efb82aec105624bf2fa9d49125a03a89f7376299))
+
 ## [1.5.18](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.17...v1.5.18) (2023-06-11)
 
 
