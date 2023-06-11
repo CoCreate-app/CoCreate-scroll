@@ -1,3 +1,10 @@
+## [1.5.20](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.19...v1.5.20) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([dc1d914](https://github.com/CoCreate-app/CoCreate-scroll/commit/dc1d914bbfc75a20ef5077c9b98e1903f607a64d))
+
 ## [1.5.19](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.18...v1.5.19) (2023-06-11)
 
 
