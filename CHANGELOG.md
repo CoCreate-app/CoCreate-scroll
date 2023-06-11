@@ -1,3 +1,10 @@
+## [1.5.25](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.24...v1.5.25) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([11689e6](https://github.com/CoCreate-app/CoCreate-scroll/commit/11689e63863d7aef8f06cffaa2963016edfa2681))
+
 ## [1.5.24](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.23...v1.5.24) (2023-06-11)
 
 
