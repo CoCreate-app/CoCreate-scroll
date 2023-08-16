@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.28...v1.6.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([973d02d](https://github.com/CoCreate-app/CoCreate-scroll/commit/973d02d5cfaa0f091d5b7ddd809d9221da6cf90d))
+* replace -target -selector ([bc8aecc](https://github.com/CoCreate-app/CoCreate-scroll/commit/bc8aecc98134e9e8ff032527dfc61aef16cb87bc))
+* webpack.config and package.json make use of mode=production instead of process.env ([bffad89](https://github.com/CoCreate-app/CoCreate-scroll/commit/bffad894608346a240a1d62969b878277a0e6ef4))
+
+
+### Features
+
+* name attribute and variable renamed to key ([6f7e1b0](https://github.com/CoCreate-app/CoCreate-scroll/commit/6f7e1b04f300350c7423075998c11d56173cb098))
+
 ## [1.5.28](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.5.27...v1.5.28) (2023-06-14)
 
 
