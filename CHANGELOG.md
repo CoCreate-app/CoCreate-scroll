@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.7.0...v1.7.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([f541db3](https://github.com/CoCreate-app/CoCreate-scroll/commit/f541db3683d2ae229d27d2a2820f3f1c687b73ee))
+* replace cdn with /dist ([3e0141a](https://github.com/CoCreate-app/CoCreate-scroll/commit/3e0141a4cc3dfb148b770861a020142cbd00e66b))
+* update file uploader ([a416fb8](https://github.com/CoCreate-app/CoCreate-scroll/commit/a416fb8f6275054529f8ddcd73d88e2608140a39))
+
 # [1.7.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.6.0...v1.7.0) (2023-08-17)
 
 
