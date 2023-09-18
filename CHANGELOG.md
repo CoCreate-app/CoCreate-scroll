@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.8.1...v1.8.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([ad9c6ef](https://github.com/CoCreate-app/CoCreate-scroll/commit/ad9c6ef3aa60854d7e139898cd9afb8a4475c069))
+* Update CoCreate depndencies to latest versions ([4f26adc](https://github.com/CoCreate-app/CoCreate-scroll/commit/4f26adc6f13d0612f200f76d4e07747b3fc699d5))
+
 ## [1.8.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.8.0...v1.8.1) (2023-08-21)
 
 
