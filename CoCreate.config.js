@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/scroll/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "scroll",
                 "content-type": "{{content-type}}",
