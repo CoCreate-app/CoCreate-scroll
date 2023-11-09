@@ -1,3 +1,11 @@
+## [1.8.8](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.8.7...v1.8.8) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([9e3f03e](https://github.com/CoCreate-app/CoCreate-scroll/commit/9e3f03e81c2e4164760eb503c0d05e3fe11d8577))
+* update host ([7f4c151](https://github.com/CoCreate-app/CoCreate-scroll/commit/7f4c1511d977cd20cf0336e0f4b6a5437ab0991d))
+
 ## [1.8.7](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.8.6...v1.8.7) (2023-11-03)
 
 
