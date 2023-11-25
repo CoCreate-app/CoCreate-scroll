@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.9.0...v1.10.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* update nav, edit button and css path ([1c50ee0](https://github.com/CoCreate-app/CoCreate-scroll/commit/1c50ee06cb3ed14fc56930894b80bfce625e9f3c))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([780e31e](https://github.com/CoCreate-app/CoCreate-scroll/commit/780e31e5e061eac4b6a68e7efd27e69fd941e2a3))
+
 # [1.9.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.8.9...v1.9.0) (2023-11-19)
 
 
