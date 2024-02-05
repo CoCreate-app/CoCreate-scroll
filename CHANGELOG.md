@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.11.0...v1.11.1) (2024-02-05)
+
+
+### Bug Fixes
+
+* Removed https://cdn.cocreate.app/latest/CoCreate.min.css ([4514fef](https://github.com/CoCreate-app/CoCreate-scroll/commit/4514feffe05e8e1a388d7b9160ae688bb75cce6c))
+
 # [1.11.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.10.0...v1.11.0) (2023-11-25)
 
 
