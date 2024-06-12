@@ -1,3 +1,11 @@
+## [1.11.3](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.11.2...v1.11.3) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([c08effc](https://github.com/CoCreate-app/CoCreate-scroll/commit/c08effcdda017ee38af9dc3496c1899cc35c79ad))
+* svg icon class ([cdc192a](https://github.com/CoCreate-app/CoCreate-scroll/commit/cdc192a957f4202a632f8efc088bdb6b9b7e88cb))
+
 ## [1.11.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.11.1...v1.11.2) (2024-04-29)
 
 
