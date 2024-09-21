@@ -1,3 +1,11 @@
+# [1.12.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.11.3...v1.12.0) (2024-09-21)
+
+
+### Features
+
+* added CoCreate-actions ([e2c2a6a](https://github.com/CoCreate-app/CoCreate-scroll/commit/e2c2a6a3071ea691244874495f5d2426906e192d))
+* scroll-to to set a scroll position top | bottom | left | right ([0c42fc1](https://github.com/CoCreate-app/CoCreate-scroll/commit/0c42fc1ce81b1bf585d5fd5508e1e1ff97de04c5))
+
 ## [1.11.3](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.11.2...v1.11.3) (2024-06-12)
 
 
