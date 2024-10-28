@@ -8,7 +8,7 @@ const CoCreateScroll = {
     firedEvents: new Map(),
 
     init: function () {
-        let elements = document.querySelectorAll(`[scroll], [scroll-to]`);
+        let elements = document.querySelectorAll(`[scroll], [scroll-to], [scrollable-x], [scrollable-y]`);
         this.__initIntersectionObserver();
         this.initElements(elements);
     },
@@ -28,8 +28,12 @@ const CoCreateScroll = {
         const intersectValue = element.getAttribute('scroll-intersect');
         const scrollTo = element.getAttribute('scroll-to');
 
+        updateScrollableAttributes(element)
+
+
         let values = element.getAttribute('scroll') || element.getAttribute('scroll-value');
-        values = values.split(",").map(x => x.trim());
+        if (values || values === '')
+            values = values.split(",").map(x => x.trim());
 
         let scrollInfo = {
             attrName: attrName,
@@ -109,6 +113,8 @@ const CoCreateScroll = {
     },
 
     setScrollPosition: function (element, scrollTo) {
+        if (!scrollTo)
+            return
         if (scrollTo.includes('top')) {
             element.scrollTop = 0;
         } else if (scrollTo.includes('bottom')) {
@@ -259,10 +265,26 @@ const CoCreateScroll = {
 
 };
 
+function updateScrollableAttributes(element) {
+    if (element.hasAttribute('scrollable-y')) {
+        if (element.scrollWidth > element.clientWidth)
+            element.setAttribute('scrollable-y', 'true');
+        else
+            element.setAttribute('scrollable-y', 'false');
+    }
+
+    if (element.hasAttribute('scrollable-x')) {
+        if (element.scrollHeight > element.clientHeight)
+            element.setAttribute('scrollable-x', 'true');
+        else
+            element.setAttribute('scrollable-x', 'false');
+    }
+}
+
 Observer.init({
     name: 'CoCreateScrollCreate',
     observe: ['addedNodes'],
-    target: '[scroll], [scroll-to]',
+    target: '[scroll], [scroll-to], [scrollable-x], [scrollable-y]',
     callback: function (mutation) {
         CoCreateScroll.initElement(mutation.target);
     }
@@ -275,6 +297,16 @@ Observer.init({
     // target: selector, // blocks mutations when applied
     callback: function (mutation) {
         CoCreateScroll.setScrollPosition(mutation.target, mutation.target.getAttribute('scroll-to'))
+    }
+});
+Observer.init({
+    name: 'CoCreateScrollAttributes',
+    observe: ['attributes'],
+    attributeName: ['scrollable-x', 'scrollable-y'],
+    // target: selector, // blocks mutations when applied
+    callback: function (mutation) {
+        if (mutation.oldValue !== mutation.target.getAttribute(mutation.attributeName))
+            updateScrollableAttributes(mutation.target)
     }
 });
 
