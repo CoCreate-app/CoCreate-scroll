@@ -284,7 +284,7 @@ function updateScrollableAttributes(element) {
 Observer.init({
     name: 'CoCreateScrollCreate',
     observe: ['addedNodes'],
-    target: '[scroll], [scroll-to], [scrollable-x], [scrollable-y]',
+    selector: '[scroll], [scroll-to], [scrollable-x], [scrollable-y]',
     callback: function (mutation) {
         CoCreateScroll.initElement(mutation.target);
     }
