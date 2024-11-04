@@ -1,3 +1,18 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.12.0...v1.13.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* observer taget has been renamed to selector ([c29bc49](https://github.com/CoCreate-app/CoCreate-scroll/commit/c29bc49a623dd66f5aee115636b77eae0b0ea27f))
+* pretier.config.js and file formating ([a6b0297](https://github.com/CoCreate-app/CoCreate-scroll/commit/a6b0297dea674108e47f92afaabc4d0954686703))
+* support for scrollable-y and scrollable-x attributes to detect if the element has a scroll ([2240d2f](https://github.com/CoCreate-app/CoCreate-scroll/commit/2240d2fec057b6d7dd036ad750e42d308f537b3c))
+
+
+### Features
+
+* add prettier.config.js and format files ([d96636c](https://github.com/CoCreate-app/CoCreate-scroll/commit/d96636cbf7eafb546ac789f9d093b8a1cb148c9d))
+* add prettier.config.js and format files ([3f15adc](https://github.com/CoCreate-app/CoCreate-scroll/commit/3f15adc4c96c171119012168e8d60297fb2b37dd))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.11.3...v1.12.0) (2024-09-21)
 
 
