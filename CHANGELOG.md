@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.13.0...v1.13.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* update observer observe param to type and and attributeName to attributeFilter ([38c28e8](https://github.com/CoCreate-app/CoCreate-scroll/commit/38c28e8ccef5153cd4f6369ff7586c9d7b342922))
+
 # [1.13.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.12.0...v1.13.0) (2024-11-04)
 
 
