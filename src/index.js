@@ -24,7 +24,7 @@ const CoCreateScroll = {
 		const upSize = this.__getSize(element.getAttribute("scroll-up"));
 		const downSize = this.__getSize(element.getAttribute("scroll-down"));
 		const attrName = element.getAttribute("scroll-attribute") || "class";
-		const targetSelector = element.getAttribute("scroll-selector");
+		const targetSelector = element.getAttribute("scroll-query");
 		const scrollSelector = element.getAttribute("scroll-element");
 		const intersectValue = element.getAttribute("scroll-intersect");
 		const scrollTo = element.getAttribute("scroll-to");
@@ -145,7 +145,7 @@ const CoCreateScroll = {
 				let element = entry.target;
 				const attrName =
 					element.getAttribute("scroll-attribute") || "class";
-				const targetSelector = element.getAttribute("scroll-selector");
+				const targetSelector = element.getAttribute("scroll-query");
 				const intersectValue = element.getAttribute("scroll-intersect");
 
 				let targetElements = [element];
