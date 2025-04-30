@@ -1,3 +1,13 @@
+## [1.13.2](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.13.1...v1.13.2) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([6eaf058](https://github.com/CoCreate-app/CoCreate-scroll/commit/6eaf058ae9360abfbec5057677ea2a990e28a95c))
+* update query attributes ([880d5cd](https://github.com/CoCreate-app/CoCreate-scroll/commit/880d5cd9dc803eed53b671a27c6d6f7224d262a0))
+* updated cocreate modules versions ([a8a0123](https://github.com/CoCreate-app/CoCreate-scroll/commit/a8a0123495ef8636753b343e06ce28b750be871a))
+* webpack.config and devdependencies ([97fa1b1](https://github.com/CoCreate-app/CoCreate-scroll/commit/97fa1b15aaf2d2dd9c4d5d9827611978cf19e9c0))
+
 ## [1.13.1](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.13.0...v1.13.1) (2025-04-11)
 
 
