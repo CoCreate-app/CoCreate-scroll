@@ -198,7 +198,7 @@ const CoCreateScroll = {
 		} = info;
 
 		let newTime = new Date().getTime();
-		if (!info.datetime || newTime - info.datetime > 200) {
+		if ((values && !info.datetime) || newTime - info.datetime > 200) {
 			info["datetime"] = newTime;
 
 			if (upSize <= currentPos - scrollY) {
@@ -212,9 +212,10 @@ const CoCreateScroll = {
 
 		//. scroll top case
 		if (scrollY <= this.delta) {
-			this.__removeAttrbuteValue(element, attrName, values[0]);
-			this.__removeAttrbuteValue(element, attrName, values[1]);
-
+			if (values) {
+				this.__removeAttrbuteValue(element, attrName, values[0]);
+				this.__removeAttrbuteValue(element, attrName, values[1]);
+			}
 			this.__addAttributeValue(element, attrName, scrollTop);
 		} else {
 			this.__removeAttrbuteValue(element, attrName, scrollTop);
