@@ -1,3 +1,10 @@
+## [1.13.4](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.13.3...v1.13.4) (2025-09-07)
+
+
+### Bug Fixes
+
+* improve scroll event handling by adding checks for values before updating attributes ([6411e3c](https://github.com/CoCreate-app/CoCreate-scroll/commit/6411e3cfed01ce2d135352a1b31b090b067a90e2))
+
 ## [1.13.3](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.13.2...v1.13.3) (2025-05-01)
 
 
