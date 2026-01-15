@@ -1,3 +1,15 @@
+# [1.14.0](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.13.4...v1.14.0) (2026-01-15)
+
+
+### Bug Fixes
+
+* update worklow ([ac9e74a](https://github.com/CoCreate-app/CoCreate-scroll/commit/ac9e74a15fd8c7d27dc5809130ea0ee99c46777f))
+
+
+### Features
+
+* comprehensive initalization of ([cecbfce](https://github.com/CoCreate-app/CoCreate-scroll/commit/cecbfcec1d9d7f34b9d4a339d5e5ed3e8f38c363))
+
 ## [1.13.4](https://github.com/CoCreate-app/CoCreate-scroll/compare/v1.13.3...v1.13.4) (2025-09-07)
 
 
